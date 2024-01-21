@@ -116,6 +116,7 @@ export default {
     // Inject styles and scripts into the HTML
     new HtmlWebpackPlugin({
       'meta': {
+        'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
         'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
@@ -125,6 +126,7 @@ export default {
 
     new HtmlWebpackPlugin({
       'meta': {
+        'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
         'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
@@ -135,6 +137,7 @@ export default {
 
     new HtmlWebpackPlugin({
       'meta': {
+        'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
         'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
@@ -145,6 +148,7 @@ export default {
 
     new HtmlWebpackPlugin({
       'meta': {
+        'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
         'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
@@ -155,6 +159,7 @@ export default {
 
     new HtmlWebpackPlugin({
       'meta': {
+        'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
         'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
@@ -162,6 +167,7 @@ export default {
       filename: "privacy-policy/index.html",
       template: path.resolve(process.cwd(), "./src/privacy-policy.hbs")
     })
+
   ],
 
   // Configure the "webpack-dev-server" plugin
