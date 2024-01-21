@@ -22,7 +22,7 @@
             <div id="pg-input1" class="pt-2">
                 <div class="input-group flex-nowrap">
                     <div class="input-group-text"><i class="bi bi-key"></i></div>
-                    <input id="pg-password" name="pg-password" type="password" class="form-control" placeholder="Master Password (Required)" autocomplete="off" required />
+                    <input id="pg-password" name="pg-password" type="password" class="form-control" placeholder="Master Password (Required)" aria-label="Master Password (Required)" autocomplete="off" required />
                     <div id="pg-password-toggle" class="input-group-text toggle-password"><i class="bi bi-eye-fill"></i></div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
             <div id="pg-input2" class="py-2">
                 <div class="input-group flex-nowrap">
                     <div id="pg-autofill-domain" class="input-group-text"><i class="bi bi-plus"></i></div>
-                    <input id="pg-salt" name="pg-salt" type="password" class="form-control" placeholder="Unique Phrase (Optional)" autocomplete="off" />
+                    <input id="pg-salt" name="pg-salt" type="password" class="form-control" placeholder="Unique Phrase (Optional)"aria-label="Unique Phrase (Optional)" autocomplete="off" />
                     <div id="pg-salt-toggle" class="input-group-text toggle-password"><i class="bi bi-eye-fill"></i></div>
                 </div>
                 <small id="pg-salt-help" class="form-text mt-2 text-muted">It is recommended to use the website URL, domain name, or app name where this password will be used to grind your master password into something more unique.</small>

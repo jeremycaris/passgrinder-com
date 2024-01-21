@@ -6,6 +6,7 @@ import CopyPlugin from "copy-webpack-plugin"
 import webpack from "webpack"
 import FaviconsWebpackPlugin from "favicons-webpack-plugin"
 
+
 export default {
   // Define the entry points of our application (can be multiple for different sections of a website)
   entry: {
@@ -159,6 +160,7 @@ export default {
 
     new HtmlWebpackPlugin({
       'meta': {
+        'robots': 'noindex',
         'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
         'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
