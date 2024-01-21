@@ -22,7 +22,7 @@ body {
     }
 
     a, a:hover {
-        color: #6eb981;
+        color: $primary;
     }
 
 	code {
@@ -50,143 +50,153 @@ body {
         max-width: 460px;
         height: auto;
         margin: 0 auto;
-    }
-    
-    #passgrinder form {
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
 
-    #passgrinder small {
-        line-height: 1em;
-        font-style: italic;
-        font-size: 0.8rem;
-        font-weight: 300;
-        max-width: 412px;
-        margin: 0 auto;
-    }
-
-    #passgrinder .toggle-password, 
-    #passgrinder .toggle-copy {
-        cursor: pointer;
-        max-width: 44px;
-    }
-
-    #passgrinder #pg-message #success, 
-    #passgrinder #pg-message #fail, 
-    #passgrinder #pg-message #reset {
-        color: #fff;
-        font-style: italic;
-        width: 100%;
-        text-align: center;
-    }
-
-    #passgrinder input[type=text], 
-    #passgrinder input[type=password] {
-        font-family: 'Source Code Pro', monospace;
-        font-weight: 300;
-        &::placeholder, &::-ms-input-placeholder {
-            color: #ccc !important;
+        form {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
         }
+
+        small {
+            line-height: 1em;
+            font-style: italic;
+            font-size: 0.8rem;
+            font-weight: 300;
+            max-width: 412px;
+            margin: 0 auto;
+        }
+
+        .toggle-password, 
+        .toggle-copy {
+            cursor: pointer;
+            max-width: 44px;
+        }
+
+        #pg-message {
+            #success, 
+            #fail, 
+            #reset {
+                color: #fff;
+                font-style: italic;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        input[type=text], 
+        input[type=password] {
+            font-family: $headings-font-family;
+            font-weight: $headings-font-weight;
+        }
+
+        input[type="submit"], 
+        input[type="reset"] {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+            color: #000 !important;
+        }
+
+        input[type="submit"] {
+            background: $primary !important;
+            border-color: $primary !important;
+        }
+
+        input[type="reset"] {
+            background: #ccc !important;
+            border-color: #ccc !important;
+        }
+
+        .text-muted {
+            color: #ddd !important;
+        }
+
+        .form-text {
+            display: block;
+        }
+
+        .form-check {
+            padding-left: 0;
+            margin-bottom: 0;
+            min-height: auto;
+        }
+
+        .form-check-inline {
+            margin-right: 0.8rem;
+        }
+
+        .form-check-inline:last-of-type {
+            margin-right: 0;
+        }
+
+        [type="radio"]:checked, 
+        [type="radio"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+
+        [type="radio"]:checked + label, 
+        [type="radio"]:not(:checked) + label {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+        }
+
+        [type="radio"]:checked + label:before, 
+        [type="radio"]:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #fff;
+            border-radius: 100%;
+            background: #fff;
+        }
+
+        [type="radio"]:checked + label:after, 
+        [type="radio"]:not(:checked) + label:after {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background: #6eb981;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        [type="radio"]:not(:checked) + label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+
+        [type="radio"]:checked + label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        input[type=text]:focus, 
+        input[type=password]:focus {
+            box-shadow: none;
+        }
+
+
     }
 
-    #passgrinder input[type="submit"], 
-    #passgrinder input[type="reset"] {
-        width: 100%;
-        max-width: 200px;
-        margin: 0 auto;
-        color: #000 !important;
+    // disable password extensions from autofill
+    protonpass-control, protonpass-root {
+        display: none;
     }
-
-    #passgrinder input[type="submit"] {
-        background: #6eb981 !important;
-        border-color: #6eb981 !important;
-    }
-
-    #passgrinder input[type="reset"] {
-        background: #ccc !important;
-        border-color: #ccc !important;
-    }
-
-    #passgrinder .text-muted {
-        color: #ddd !important;
-    }
-
-    #passgrinder .form-text {
-        display: block;
-    }
-
-    #passgrinder .form-check {
-        padding-left: 0;
-        margin-bottom: 0;
-        min-height: auto;
-    }
-
-    #passgrinder .form-check-inline {
-        margin-right: 0.8rem;
-    }
-
-    #passgrinder .form-check-inline:last-of-type {
-        margin-right: 0;
-    }
-
-    #passgrinder [type="radio"]:checked, 
-    #passgrinder [type="radio"]:not(:checked) {
-        position: absolute;
-        left: -9999px;
-    }
-
-    #passgrinder [type="radio"]:checked + label, 
-    #passgrinder [type="radio"]:not(:checked) + label {
-        position: relative;
-        padding-left: 28px;
-        cursor: pointer;
-        line-height: 20px;
-        display: inline-block;
-    }
-
-    #passgrinder [type="radio"]:checked + label:before, 
-    #passgrinder [type="radio"]:not(:checked) + label:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0px;
-        width: 18px;
-        height: 18px;
-        border: 1px solid #fff;
-        border-radius: 100%;
-        background: #fff;
-    }
-
-    #passgrinder [type="radio"]:checked + label:after, 
-    #passgrinder [type="radio"]:not(:checked) + label:after {
-        content: '';
-        width: 18px;
-        height: 18px;
-        background: #6eb981;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        border-radius: 100%;
-        -webkit-transition: all 0.2s ease;
-        transition: all 0.2s ease;
-    }
-
-    #passgrinder [type="radio"]:not(:checked) + label:after {
-        opacity: 0;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-
-    #passgrinder [type="radio"]:checked + label:after {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    #passgrinder input[type=text]:focus, 
-    #passgrinder input[type=password]:focus {
-        box-shadow: none;
+    div[data-lastpass-icon-root="true"], 
+    div[data-lastpass-infield="true"] { 
+        opacity: 0; 
     }
 }
