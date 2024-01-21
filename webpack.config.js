@@ -120,9 +120,10 @@ export default {
       jQuery: 'jquery',
     }),
 
-    new FaviconsWebpackPlugin(
-      './src/images/passgrinder-128.png'
-    ),
+    new FaviconsWebpackPlugin({
+      logo: './src/images/passgrinder-128.png',
+      logoMaskable: './src/images/maskable_icon.png',
+    }),
 
     // Inject styles and scripts into the HTML
     new HtmlWebpackPlugin({
