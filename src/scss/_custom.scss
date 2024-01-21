@@ -1,0 +1,192 @@
+body {
+    background-color: #111;
+    background-image: url("/images/zenbg1.jpg"), url("/images/zenbg2.jpg");
+    background-repeat: repeat-x, repeat;
+    background-position: top center;
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+    margin: 0;
+
+    .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        border: none;
+
+        &:active, &:focus, &:focus-visible {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    a, a:hover {
+        color: #6eb981;
+    }
+
+	code {
+        font-size: 1.4em;
+        font-family: 'Source Code Pro', monospace !important;
+        font-weight: 300 !important;
+        line-height: 2.4em;
+        color: #777;
+        background: #efefef;
+        padding: 1.2em 0.8em 0.4em;
+	}
+
+    strong {
+        font-weight: 700;
+    }
+    
+    main {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: calc( 100vh - 593px );
+    }
+
+    #passgrinder {
+        width: 460px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    #passgrinder form {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #passgrinder small {
+        line-height: 1em;
+        font-style: italic;
+        font-size: 0.8rem;
+        font-weight: 300;
+        max-width: 412px;
+        margin: 0 auto;
+    }
+
+    #passgrinder .toggle-password, 
+    #passgrinder .toggle-copy {
+        cursor: pointer;
+        max-width: 44px;
+    }
+
+    #passgrinder #pg-message #success, 
+    #passgrinder #pg-message #fail, 
+    #passgrinder #pg-message #reset {
+        color: #fff;
+        font-style: italic;
+        width: 100%;
+        text-align: center;
+    }
+
+    #passgrinder input[type=text], 
+    #passgrinder input[type=password] {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 300;
+        &::placeholder, &::-ms-input-placeholder {
+            color: #ccc !important;
+        }
+    }
+
+    #passgrinder input[type="submit"], 
+    #passgrinder input[type="reset"] {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        color: #000 !important;
+    }
+
+    #passgrinder input[type="submit"] {
+        background: #6eb981 !important;
+        border-color: #6eb981 !important;
+    }
+
+    #passgrinder input[type="reset"] {
+        background: #ccc !important;
+        border-color: #ccc !important;
+    }
+
+    #passgrinder .text-muted {
+        color: #ddd !important;
+    }
+
+    #passgrinder .form-text {
+        display: block;
+    }
+
+    #passgrinder .form-check {
+        padding-left: 0;
+        margin-bottom: 0;
+        min-height: auto;
+    }
+
+    #passgrinder .form-check-inline {
+        margin-right: 0.8rem;
+    }
+
+    #passgrinder .form-check-inline:last-of-type {
+        margin-right: 0;
+    }
+
+    #passgrinder [type="radio"]:checked, 
+    #passgrinder [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+
+    #passgrinder [type="radio"]:checked + label, 
+    #passgrinder [type="radio"]:not(:checked) + label {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+    }
+
+    #passgrinder [type="radio"]:checked + label:before, 
+    #passgrinder [type="radio"]:not(:checked) + label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        background: #fff;
+    }
+
+    #passgrinder [type="radio"]:checked + label:after, 
+    #passgrinder [type="radio"]:not(:checked) + label:after {
+        content: '';
+        width: 18px;
+        height: 18px;
+        background: #6eb981;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    #passgrinder [type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    #passgrinder [type="radio"]:checked + label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    #passgrinder input[type=text]:focus, 
+    #passgrinder input[type=password]:focus {
+        box-shadow: none;
+    }
+}

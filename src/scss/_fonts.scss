@@ -1,0 +1,34 @@
+//---------------------------------------------
+//
+//  Fonts
+//
+//    1. Loading Mixins
+//    2. Loading Fonts
+//
+//---------------------------------------------
+
+//---------------------------------------------
+// 1. Loading Mixins
+//---------------------------------------------
+
+@import "mixins/google-fonts";
+
+//---------------------------------------------
+// 2. Loading Fonts
+//---------------------------------------------
+
+
+@include googleFonts((
+  (
+    "name": "Lato",
+    "folder": "Lato",
+    "files": "Lato",
+    "weights": (300, 700)
+  ),
+  (
+    "name": "Source Code Pro",
+    "folder": "Source_Code_Pro",
+    "files": "SourceCodePro",
+    "weights": (300)
+  ),
+));
