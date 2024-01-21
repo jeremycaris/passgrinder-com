@@ -1,5 +1,5 @@
 body {
-    background-color: #111;
+    background-color: $dark;
     background-image: url("/images/zenbg1.jpg"), url("/images/zenbg2.jpg");
     background-repeat: repeat-x, repeat;
     background-position: top center;
@@ -27,11 +27,11 @@ body {
 
 	code {
         font-size: 1.4em;
-        font-family: 'Source Code Pro', monospace !important;
-        font-weight: 300 !important;
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
         line-height: 2.4em;
-        color: #777;
-        background: #efefef;
+        color: $secondary;
+        background: $light;
         padding: 1.2em 0.8em 0.4em;
 	}
 
@@ -76,7 +76,6 @@ body {
             #success, 
             #fail, 
             #reset {
-                color: #fff;
                 font-style: italic;
                 width: 100%;
                 text-align: center;
@@ -94,7 +93,7 @@ body {
             width: 100%;
             max-width: 200px;
             margin: 0 auto;
-            color: #000 !important;
+            color: $dark !important;
         }
 
         input[type="submit"] {
@@ -103,12 +102,12 @@ body {
         }
 
         input[type="reset"] {
-            background: #ccc !important;
-            border-color: #ccc !important;
+            background: $light !important;
+            border-color: $light !important;
         }
 
         .text-muted {
-            color: #ddd !important;
+            color: $secondary !important;
         }
 
         .form-text {
@@ -152,9 +151,9 @@ body {
             top: 0px;
             width: 18px;
             height: 18px;
-            border: 1px solid #fff;
+            border: 1px solid $light;
             border-radius: 100%;
-            background: #fff;
+            background: $light;
         }
 
         [type="radio"]:checked + label:after, 
@@ -191,12 +190,4 @@ body {
 
     }
 
-    // disable password extensions from autofill
-    protonpass-control, protonpass-root {
-        display: none;
-    }
-    div[data-lastpass-icon-root="true"], 
-    div[data-lastpass-infield="true"] { 
-        opacity: 0; 
-    }
 }
