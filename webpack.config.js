@@ -5,9 +5,14 @@ import HtmlWebpackPlugin from "html-webpack-plugin"
 import CopyPlugin from "copy-webpack-plugin"
 import webpack from "webpack"
 import FaviconsWebpackPlugin from "favicons-webpack-plugin"
+
 // const SitemapPlugin = require('sitemap-webpack-plugin').default;
 import sitemap from "sitemap-webpack-plugin"
 var SitemapPlugin = sitemap.default;
+
+// https://www.npmjs.com/package/robotstxt-webpack-plugin
+// https://github.com/itgalaxy/generate-robotstxt
+import RobotstxtPlugin from "robotstxt-webpack-plugin"
 
 // sitemap paths
 const paths = [
@@ -184,6 +189,18 @@ export default {
     // Basic usage (output defaults to sitemap.xml)
     new SitemapPlugin({ 
       base: 'https://passgrinder.com', paths 
+    }),
+
+    new RobotstxtPlugin({
+      policy: [
+        {
+          userAgent: "*",
+          allow: "/",
+          disallow: "",
+        },
+      ],
+      sitemap: "https://passgrinder.com/sitemap.xml",
+      host: "https://passgrinder.com",
     })
 
   ],
