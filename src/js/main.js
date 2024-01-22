@@ -19,6 +19,14 @@ $(function () {
   }).addClass('active').attr("aria-current","page").append(' <span class="visually-hidden">(Current)</span>');
 });
 
+// Basic email obfuscation 
+// https://gist.github.com/mathiasbynens/286824?permalink_comment_id=3053830#gistcomment-3053830
+$('a[data-email]').each(function () {
+    this.href = 'mailto:' + $(this).attr('data-email').replace('[at]', '@').replace(/\[dot]/g, '.');
+});
+
+// Set copyright year dynamically
+$('#spanYear').html(new Date().getFullYear());
 
 
 /*
