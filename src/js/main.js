@@ -8,7 +8,7 @@ import {initBootstrap} from "./bootstrap.js";
 initBootstrap({
   tooltip: false,
   popover: false,
-  toasts: true,
+  toasts: false,
 });
 
 // Update active menu item
@@ -59,9 +59,6 @@ $(function() {
     $("input[type='reset']").closest('form').on('reset', function(event) {
         $("#pg-result").removeClass("visible").addClass("invisible");
         $("#pg-result-pass").val("");
-        // $('#pg-message #success').html("");
-        // $('#pg-message #fail').html("");
-        // $('#pg-message #reset').html("");
         $('#pg-password-toggle i').removeClass("bi-eye-slash-fill").addClass("bi-eye-fill");
         $('#pg-salt-toggle i').removeClass("bi-eye-slash-fill").addClass("bi-eye-fill");
     });
@@ -94,24 +91,18 @@ $(function() {
         var clipboard = new ClipboardJS('.toggle-copy');
         
         clipboard.on('success', function() {
-            $('#pg-message #success').show();
-            // $('#pg-message #success').html( 'Copied to the clipboard!' );
-            $('#pg-message #success').delay(3000).fadeOut();
+            $('#pg-message #success').show().delay(3000).fadeOut();
         });
         
         clipboard.on('error', function() {
-            $('#pg-message #fail').show();
-            // $('#pg-message #fail').html( 'Something went wrong. Please manually copy your password.' );
-            $('#pg-message #fail').delay(3000).fadeOut();
+            $('#pg-message #fail').show().delay(3000).fadeOut();
         });
         
         // Auto reset form after 5 minutes
         if ( $("#pg-result-pass").val() ) { // Double check that it is necessary
             setTimeout( function() { 
                 $("#passgrinder-form").trigger('reset'); 
-                $('#pg-message #reset').show();
-                // $('#pg-message #reset').html("PassGrinder has automatically reset to protect your password.");
-                $('#pg-message #reset').delay(3000).fadeOut();
+                $('#pg-message #reset').show().delay(3000).fadeOut();
             }, 300000);
         }
         
