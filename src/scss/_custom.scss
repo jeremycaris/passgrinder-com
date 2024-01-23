@@ -30,7 +30,7 @@ body {
         font-family: $headings-font-family;
         font-weight: $headings-font-weight;
         line-height: 2.4em;
-        color: $secondary;
+        color: $dark;
         background: $light;
         padding: 1.2em 0.8em 0.4em;
 	}
@@ -44,6 +44,10 @@ body {
         margin-left: auto;
         margin-right: auto;
         min-height: calc( 100vh - 593px );
+    }
+
+    .bi.bi-box-arrow-up-right {
+        margin-top: -0.35rem;
     }
 
     #passgrinder {

@@ -21,17 +21,25 @@
         <form method="post" id="passgrinder-form" autocomplete="off">
             <div id="pg-input1" class="pt-2">
                 <div class="input-group flex-nowrap">
-                    <div class="input-group-text"><i class="bi bi-key"></i></div>
+                    <div class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16"><path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8m4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5"/><path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>
+                    </div>
                     <input id="pg-password" name="pg-password" type="password" class="form-control" placeholder="Master Password (Required)" aria-label="Master Password (Required)" autocomplete="off" required />
-                    <div id="pg-password-toggle" class="input-group-text toggle-password"><i class="bi bi-eye-fill"></i></div>
+                    <div id="pg-password-toggle" class="input-group-text toggle-password">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/></svg>
+                    </div>
                 </div>
             </div>
             
             <div id="pg-input2" class="py-2">
                 <div class="input-group flex-nowrap">
-                    <div id="pg-autofill-domain" class="input-group-text"><i class="bi bi-plus"></i></div>
+                    <div id="pg-autofill-domain" class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/></svg>
+                    </div>
                     <input id="pg-salt" name="pg-salt" type="password" class="form-control" placeholder="Unique Phrase (Optional)"aria-label="Unique Phrase (Optional)" autocomplete="off" />
-                    <div id="pg-salt-toggle" class="input-group-text toggle-password"><i class="bi bi-eye-fill"></i></div>
+                    <div id="pg-password-toggle" class="input-group-text toggle-password">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/></svg>
+                    </div>
                 </div>
                 <small id="pg-salt-help" class="form-text mt-2 text-muted">It is recommended to use the website URL, domain name, or app name where this password will be used to grind your master password into something more unique.</small>
             </div>
