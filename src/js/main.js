@@ -51,8 +51,11 @@ $(function() {
 
     // Toggle password field visibility
     $("body").on('click', '.toggle-password', function() {
-        $("i", this).toggleClass("bi-eye-slash-fill");
-        $("i", this).toggleClass("bi-eye-fill");
+        if ($("svg use", this).attr("xlink:href") == "#bi-eye-fill") {
+            $("svg use", this).attr("xlink:href", "#bi-eye-slash-fill");
+        } else {
+            $("svg use", this).attr("xlink:href", "#bi-eye-fill");
+        }
         
         var input = $(this).prev();
 
