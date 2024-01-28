@@ -11,8 +11,8 @@ initBootstrap({
   toasts: false,
 });
 
-// Update active menu item
 $(function () {
+    // Update active menu item
     var url = window.location;
     $('ul.navbar-nav a').filter(function() {
         return this.href == url;
