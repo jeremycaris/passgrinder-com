@@ -8,6 +8,10 @@ body {
     color: white;
     margin: 0;
 
+    main {
+        min-height: calc( 100vh - 197.5px - 48px - 24px ) !important;
+    }
+
     .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
         flex-direction: column;
     }
