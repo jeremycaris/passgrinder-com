@@ -40,12 +40,12 @@ import ClipboardJS from "clipboard";
 $(function() {
 
     // Field focus on load
-    $('#pg-password').focus();
+    $('#pg-password').trigger('focus');
 
     
     // Auto select all on generated pass field on click
     $('#pg-result-pass').on('touchstart click', function(){ 
-        $(this).select(); 
+        $(this).trigger('select'); 
     });
 
 
@@ -77,7 +77,7 @@ $(function() {
 
 
     // Form functionality
-    $( '#passgrinder-form' ).submit(function(e){
+    $( '#passgrinder-form' ).on( "submit", function(e) {
         e.preventDefault();
         
         // Hash the password/s
