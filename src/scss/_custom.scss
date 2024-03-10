@@ -47,10 +47,10 @@ body {
         font-weight: 700;
     }
 
-    #lead-line {
-        font-size: 1.875rem;
+    .lead {
+        font-size: 1.875rem !important;
         font-weight: 300;
-        line-height: 1.8rem;
+        line-height: 1.8rem !important;
     }
 
     svg#external-link {
