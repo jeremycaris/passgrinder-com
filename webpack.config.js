@@ -211,14 +211,14 @@ export default {
       directory: path.resolve(process.cwd(), "public")
     },
     watchFiles: [
+      path.resolve(process.cwd(), "./src/download.hbs"),
       path.resolve(process.cwd(), "./src/index.hbs"),
       path.resolve(process.cwd(), "./src/info.hbs"),
-      path.resolve(process.cwd(), "./src/download.hbs"),
       path.resolve(process.cwd(), "./src/install.hbs"),
-      path.resolve(process.cwd(), "./src/contact.hbs"),
       path.resolve(process.cwd(), "./src/privacy-policy.hbs"),
-      path.resolve(process.cwd(), "./src/partials/header.hbs"),
-      path.resolve(process.cwd(), "./src/partials/footer.hbs")
+      path.resolve(process.cwd(), "./src/partials/footer.hbs"),
+      path.resolve(process.cwd(), "./src/partials/gtag.hbs"),
+      path.resolve(process.cwd(), "./src/partials/navbar.hbs")
     ],
     compress: true,
     port: process.env.PORT || 9090,
