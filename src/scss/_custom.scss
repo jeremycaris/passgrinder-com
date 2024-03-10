@@ -10,6 +10,10 @@ body {
 
     main {
         min-height: calc( 100vh - 197.5px - 48px - 24px ) !important;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: calc( 100vh - 593px );
     }
 
     .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
@@ -42,12 +46,9 @@ body {
     strong {
         font-weight: 700;
     }
-    
-    main {
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-        min-height: calc( 100vh - 593px );
+
+    .lead {
+        line-height: 1.8rem;
     }
 
     svg#external-link {
@@ -81,6 +82,7 @@ body {
         }
 
         #pg-message {
+            z-index: 1080;
             #success, 
             #fail, 
             #reset {
