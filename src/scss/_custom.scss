@@ -31,6 +31,8 @@ body {
 
     a, a:hover {
         color: $primary;
+        text-decoration: none;
+        border-bottom: 0.04em dotted $primary;
     }
 
 	code {
@@ -49,6 +51,11 @@ body {
 
     svg#external-link {
         margin-top: -0.35rem;
+    }
+
+    a#author {
+        color: $light;
+        border-bottom: 0.04em dotted $light;
     }
 
     #passgrinder {
