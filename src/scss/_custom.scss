@@ -16,6 +16,10 @@ body {
         min-height: calc( 100vh - 593px );
     }
 
+    .lead {
+        line-height: 1.8rem;
+    }
+
     .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
         flex-direction: column;
     }
@@ -29,10 +33,15 @@ body {
         }
     }
 
-    a, a:hover {
+    main a, main a:hover {
         color: $primary;
         text-decoration: none;
-        border-bottom: 0.04em dotted $primary;
+        border-bottom: 0.05rem dotted $primary;
+        text-shadow: 0 0 4px $dark;
+    }
+
+    a.btn {
+        text-shadow: none;
     }
 
 	code {
@@ -53,9 +62,10 @@ body {
         margin-top: -0.35rem;
     }
 
-    a#author {
+    footer a#author {
         color: $light;
-        border-bottom: 0.04em dotted $light;
+        text-decoration: none;
+        border-bottom: 0.05rem dotted $light;
     }
 
     #passgrinder {
