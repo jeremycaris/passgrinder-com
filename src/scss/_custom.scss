@@ -94,6 +94,10 @@ body {
             max-width: 44px;
         }
 
+        #pg-actions #pg-submit, #pg-actions #pg-reset {
+            font-weight: 900 !important;
+        }
+
         #pg-message {
             z-index: 1080;
             #success, 
@@ -116,7 +120,11 @@ body {
             width: 100%;
             max-width: 200px;
             margin: 0 auto;
-            color: $dark !important;
+            color: #fff !important;
+        }
+
+        input[type="reset"] {
+            color: #1e262980 !important;
         }
 
         input[type="submit"] {
@@ -184,7 +192,7 @@ body {
             content: '';
             width: 18px;
             height: 18px;
-            background: #6eb981;
+            background: #6baf78;
             position: absolute;
             top: 0px;
             left: 0px;
