@@ -1,8 +1,8 @@
 body {
-    background-color: $dark;
-    background-image: url("/images/zenbg1.jpg"), url("/images/zenbg2.jpg");
-    background-repeat: repeat-x, repeat;
-    background-position: top center;
+    background-color: #1e2629;
+    // background-image: url("/images/zenbg1.jpg"), url("/images/zenbg2.jpg");
+    // background-repeat: repeat-x, repeat;
+    // background-position: top center;
     font-weight: 300;
     font-size: 15px;
     color: white;
@@ -81,8 +81,8 @@ body {
 
         small {
             line-height: 1em;
-            font-style: italic;
-            font-size: 0.8rem;
+            // font-style: italic;
+            font-size: 11px;
             font-weight: 300;
             max-width: 412px;
             margin: 0 auto;
