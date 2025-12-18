@@ -135,7 +135,7 @@ export default {
       'meta': {
         'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
-        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
       },
       template: path.resolve(process.cwd(), "./src/index.hbs")
@@ -145,7 +145,7 @@ export default {
       'meta': {
         'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
-        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
       },
       filename: "info/index.html",
@@ -156,7 +156,7 @@ export default {
       'meta': {
         'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
-        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
       },
       filename: "download/index.html",
@@ -167,7 +167,7 @@ export default {
       'meta': {
         'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
-        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
       },
       filename: "install/index.html",
