@@ -179,7 +179,7 @@ export default {
         'robots': 'noindex',
         'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
         'charset': 'utf-8',
-        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        'viewport': 'width=device-width, initial-scale=1.0, maximum-scale=1.0',
         'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
       },
       filename: "privacy-policy/index.html",
