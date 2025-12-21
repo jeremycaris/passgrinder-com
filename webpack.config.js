@@ -163,16 +163,16 @@ export default {
       template: path.resolve(process.cwd(), "./src/download.hbs")
     }),
 
-    new HtmlWebpackPlugin({
-      'meta': {
-        'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
-        'charset': 'utf-8',
-        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0',
-        'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
-      },
-      filename: "install/index.html",
-      template: path.resolve(process.cwd(), "./src/install.hbs")
-    }),
+    // new HtmlWebpackPlugin({
+    //   'meta': {
+    //     'description': 'Generate twenty-character strong passwords from your master password and the domain name or unique phrase you choose.',
+    //     'charset': 'utf-8',
+    //     'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0',
+    //     'x-ua-compatible': { 'http-equiv': 'x-ua-compatible', 'content': 'ie=edge' },
+    //   },
+    //   filename: "install/index.html",
+    //   template: path.resolve(process.cwd(), "./src/install.hbs")
+    // }),
 
     new HtmlWebpackPlugin({
       'meta': {
@@ -214,7 +214,7 @@ export default {
       path.resolve(process.cwd(), "./src/download.hbs"),
       path.resolve(process.cwd(), "./src/index.hbs"),
       path.resolve(process.cwd(), "./src/info.hbs"),
-      path.resolve(process.cwd(), "./src/install.hbs"),
+      // path.resolve(process.cwd(), "./src/install.hbs"),
       path.resolve(process.cwd(), "./src/privacy-policy.hbs"),
       path.resolve(process.cwd(), "./src/partials/footer.hbs"),
       path.resolve(process.cwd(), "./src/partials/gtag.hbs"),
